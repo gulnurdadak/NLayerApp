@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace NLayer.Repository.Migrations
 {
-    public partial class initial : Migration
+    public partial class _initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -90,11 +90,11 @@ namespace NLayer.Repository.Migrations
                 columns: new[] { "Id", "CategoryId", "CreatedDate", "Name", "Price", "Stock", "UpdatedDate" },
                 values: new object[,]
                 {
-                    { 1, 1, new DateTime(2023, 6, 7, 17, 8, 59, 149, DateTimeKind.Local).AddTicks(4343), "Pencil1", 100m, 20, null },
-                    { 2, 1, new DateTime(2023, 6, 7, 17, 8, 59, 149, DateTimeKind.Local).AddTicks(4358), "Pencil2", 500m, 70, null },
-                    { 3, 1, new DateTime(2023, 6, 7, 17, 8, 59, 149, DateTimeKind.Local).AddTicks(4359), "Pencil3", 600m, 80, null },
-                    { 4, 2, new DateTime(2023, 6, 7, 17, 8, 59, 149, DateTimeKind.Local).AddTicks(4360), "Book1", 467m, 50, null },
-                    { 5, 2, new DateTime(2023, 6, 7, 17, 8, 59, 149, DateTimeKind.Local).AddTicks(4360), "Book2", 432m, 43, null }
+                    { 1, 1, new DateTime(2024, 1, 28, 20, 31, 32, 749, DateTimeKind.Local).AddTicks(5208), "Pencil1", 100m, 20, null },
+                    { 2, 1, new DateTime(2024, 1, 28, 20, 31, 32, 749, DateTimeKind.Local).AddTicks(5218), "Pencil2", 500m, 70, null },
+                    { 3, 1, new DateTime(2024, 1, 28, 20, 31, 32, 749, DateTimeKind.Local).AddTicks(5219), "Pencil3", 600m, 80, null },
+                    { 4, 2, new DateTime(2024, 1, 28, 20, 31, 32, 749, DateTimeKind.Local).AddTicks(5220), "Book1", 467m, 50, null },
+                    { 5, 2, new DateTime(2024, 1, 28, 20, 31, 32, 749, DateTimeKind.Local).AddTicks(5221), "Book2", 432m, 43, null }
                 });
 
             migrationBuilder.InsertData(

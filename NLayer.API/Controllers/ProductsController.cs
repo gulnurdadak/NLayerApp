@@ -8,6 +8,7 @@ using NLayer.Service.Services;
 
 namespace NLayer.API.Controllers
 {
+
     [Route("api/[controller]")]
     [ApiController]
     public class ProductsController : CustomBaseController
@@ -45,7 +46,7 @@ namespace NLayer.API.Controllers
             return CreateActionResult(CustomResponseDto<ProductDto>.Success(201, productsDto));
         }
 
-        [HttpPost]
+        [HttpPut]
         public async Task<IActionResult> Update(ProductUpdateDto productDto)
         {
             await _service.UpdateAsync(_mapper.Map<Product>(productDto));
